@@ -29,12 +29,12 @@ export default function Navbar() {
             alt="logonsc"
             width={80}
             height={75}
-            className="md:w-[120px] md:h-[110px] w-[80px] h-[75px] cursor-pointer"
+            className="md:w-[100px] md:h-[90px] w-[80px] h-[75px] cursor-pointer"
           />
         </Link>
       </p>
 
-      <ul className="hidden md:flex items-center gap-10 font-medium text-black">
+      <ul className="hidden md:flex items-center gap-10 font-medium ">
         {menuData?.map((item) => (
           <div key={item.id}>
             {item?.subMenu ? (
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <BsChevronDown size={14} />
               </li>
             ) : (
-              <li className="cursor-pointer hover:text-green-500">
+              <li className="cursor-pointer text-[var(--palette-1)] hover:text-black transition-all duration-300 hover:underline">
                 <Link href={item?.url}>{item.name}</Link>
               </li>
             )}
@@ -52,7 +52,7 @@ export default function Navbar() {
       </ul>
 
       <div className="flex items-center gap-4 text-black">
-        <div className="font-semibold bg-green-500 text-white px-4 py-2 rounded-full flex items-center gap-2 cursor-pointer">
+        <div className="font-semibold bg-[var(--palette-1)] text-white px-4 py-2 rounded-full flex items-center gap-2 cursor-pointer hover:bg-[var(--palette-2)] transition-all duration-300">
           <Link href={"/login"}>Commander un article</Link>
         </div>
 

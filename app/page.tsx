@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative text-white text-[20px] w-full max-w-[1360px] mx-auto mt-6">
+    <div className="relative text-white text-[20px] w-full mx-auto mt-6">
       <Swiper
         navigation={false}
         autoplay={{
@@ -41,7 +41,7 @@ export default function Home() {
               alt="background"
               width={800}
               height={300}
-              className="object-cover w-full h-full rounded-2xl"
+              className="object-cover w-full h-full"
             />
             <div className="px-[8px] md:px-[40px] py-[8px] md:py-[25px] font-oswald bg-[#F02D34] absolute bottom-[15px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
               Button {slide.id}
