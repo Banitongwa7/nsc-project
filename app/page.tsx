@@ -2,8 +2,8 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/effect-fade";
+import {Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
 
 type Slide = {
@@ -13,26 +13,23 @@ type Slide = {
 
 export default function Home() {
   const sliders: Slide[] = [
-    { id: 1, image: "https://picsum.photos/800/300?random=1" },
-    { id: 2, image: "https://picsum.photos/800/300?random=2" },
-    { id: 3, image: "https://picsum.photos/800/300?random=3" },
-    { id: 4, image: "https://picsum.photos/800/300?random=4" },
-    { id: 5, image: "https://picsum.photos/800/300?random=5" },
-    { id: 6, image: "https://picsum.photos/800/300?random=6" },
-    { id: 7, image: "https://picsum.photos/800/300?random=7" },
-    { id: 8, image: "https://picsum.photos/800/300?random=8" },
-    { id: 9, image: "https://picsum.photos/800/300?random=9" },
+    { id: 1, image: "/assets/img/firstpage/image1.png" },
+    { id: 2, image: "/assets/img/firstpage/image2.jpg" },
+    { id: 3, image: "/assets/img/firstpage/image3.png" },
+    { id: 4, image: "/assets/img/firstpage/image4.jpg" },
   ];
 
   return (
-    <div className="relative text-white text-[20px] w-full mx-auto mt-6">
+    <div className="relative text-white text-[20px] w-full mx-auto mt-10">
       <Swiper
-        navigation={false}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
         }}
-        modules={[Navigation, Autoplay]}
+        effect="fade"
+        modules={[Autoplay, EffectFade]}
+        loop={true}
+        speed={4000}
       >
         {sliders.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -41,7 +38,8 @@ export default function Home() {
               alt="background"
               width={800}
               height={300}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-[700px]"
+              priority
             />
             <div className="px-[8px] md:px-[40px] py-[8px] md:py-[25px] font-oswald bg-[#F02D34] absolute bottom-[15px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
               Button {slide.id}
