@@ -20,7 +20,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative text-white text-[20px] w-full mx-auto mt-10">
+    <div className="relative text-white text-[20px] w-full mx-auto my-10">
       <Swiper
         autoplay={{
           delay: 5000,
