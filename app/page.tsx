@@ -36,7 +36,7 @@ export default function Home() {
           Étape 2
         </span>
       ),
-      title: "Remplissez le formulaire de commande",
+      title: "Remplissez le formulaire",
       description: "Remplissez le formulaire de commande et payez 50% du montant pour confirmer",
       thumbnail: "/assets/icons/steps/step-2.png",
     },
@@ -113,8 +113,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-y-4 items-center justify-center">
                 {step.badge}
-                <h2 className="text-base">{step.title}</h2>
-                <span className="block text-slate-600 dark:text-slate-400 text-sm leading-6 text-center">
+                <h2 className="text-base text-[var(--palette-1)]">{step.title}</h2>
+                <span className="block text-slate-600 text-sm leading-6 text-center">
                   {step.description}
                 </span>
               </div>
@@ -122,6 +122,15 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <div className="max-w-7xl mx-auto px-4 w-full my-10">
+        <div className="text-center space-y-5">
+          <h2 className="font-extrabold text-[--palette-1] text-5xl">Tous nos produits</h2>
+          <p className="text-md text-gray-600 font-medium">Consultez tous nos produits Nyota Skincare</p>
+        </div>
+
+      </div>
+
     </div>
   );
 }
