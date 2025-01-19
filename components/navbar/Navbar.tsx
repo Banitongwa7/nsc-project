@@ -53,7 +53,7 @@ export default function Navbar() {
 
       <div className="flex items-center gap-4 text-black">
         <div className="font-semibold bg-[var(--palette-1)] text-white px-4 py-2 rounded-full flex items-center gap-2 cursor-pointer hover:bg-[var(--palette-2)] transition-all duration-300">
-          <Link href={"/login"}>Commander un article</Link>
+          <Link href="https://forms.gle/PF4s9DRkaupDWa6B9" target="_blank">Commander un article</Link>
         </div>
 
         <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2">

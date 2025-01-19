@@ -23,41 +23,41 @@ export default function Home() {
     {
       badge: (
         <span className="inline-flex px-2.5 py-1 rounded-secondary text-xs text-red-800 bg-red-100 relative">
-          Step 1
+          Étape 1
         </span>
       ),
-      title: "Filter & Discover",
-      description: "Smart filtering and suggestions make it easy to find",
+      title: "Choisissez votre produit",
+      description: "Choisissez parmi une variété de produits de qualité",
       thumbnail: "/assets/icons/steps/step-1.png",
     },
     {
       badge: (
         <span className="inline-flex px-2.5 py-1 rounded-secondary text-xs text-indigo-800 bg-indigo-100 relative">
-          Step 2
+          Étape 2
         </span>
       ),
-      title: "Add to bag",
-      description: "Easily select the correct items and add them to the cart",
+      title: "Remplissez le formulaire de commande",
+      description: "Remplissez le formulaire de commande et payez 50% du montant pour confirmer",
       thumbnail: "/assets/icons/steps/step-2.png",
     },
     {
       badge: (
         <span className="inline-flex px-2.5 py-1 rounded-secondary text-xs text-yellow-800 bg-yellow-100 relative">
-          Step 3
+          Étape 3
         </span>
       ),
-      title: "Fast Shipping",
-      description: "The carrier will confirm and ship quickly to you",
+      title: "Confirmation et expédition",
+      description: "Nous confirmerons votre commande et expédierons le produit",
       thumbnail: "/assets/icons/steps/step-3.png",
     },
     {
       badge: (
         <span className="inline-flex px-2.5 py-1 rounded-secondary text-xs text-purple-800 bg-purple-100 relative">
-          Step 4
+          Étape 4
         </span>
       ),
-      title: "Enjoy the product",
-      description: "Have fun and enjoy your 5-star quality products",
+      title: "Profitez de votre produit",
+      description: "Profitez de votre produit et payez le reste du montant",
       thumbnail: "/assets/icons/steps/step-4.png",
     },
   ];
@@ -84,18 +84,18 @@ export default function Home() {
               className="object-cover w-full h-[700px]"
               priority
             />
-            <div className="px-[8px] md:px-[40px] py-[8px] md:py-[25px] font-oswald bg-[#F02D34] absolute bottom-[15px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
-              Button {slide.id}
+            <div className="px-[8px] md:px-[40px] py-[8px] md:py-[25px] bg-[var(--palette-3)] absolute bottom-[15px] md:bottom-[75px] left-0 text-black/[0.9] text-[10px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
+              Voir plus
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <div className="max-w-7xl mx-auto px-4 w-full">
+      <div className="max-w-7xl mx-auto px-4 w-full my-10">
         <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-16 xl:gap-20">
           <picture className="hidden md:block absolute inset-x-0 top-5">
             <source srcSet="/assets/home/steps/step-bg.svg" type="image/svg" />
-            <img src="/assets/home/steps/step-bg.svg" alt="vector" />
+            <img src="/assets/icons/steps/step-bg.svg" alt="vector" />
           </picture>
           {steps.map((step, index) => (
             <div
