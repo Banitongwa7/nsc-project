@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
+import AllArticles from "@/data/AllArticles";
+import CardArticle from "@/components/card/CardArticle";
 
 type Slide = {
   id: number;
@@ -127,6 +129,14 @@ export default function Home() {
         <div className="text-center space-y-5">
           <h2 className="font-extrabold text-[--palette-1] text-5xl">Tous nos produits</h2>
           <p className="text-md text-gray-600 font-medium">Consultez tous nos produits Nyota Skincare</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-14 lg:px-8 md:px-8 px-8">
+          {
+            AllArticles.map((item) => (
+              <CardArticle key={item.id} item={item} />
+            ))
+          }
         </div>
 
       </div>
