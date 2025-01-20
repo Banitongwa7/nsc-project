@@ -7,6 +7,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or leaving it feeling tight and dry. Featuring three essential ceramides and hyaluronic acid, the gel-based foaming cleanser is an effective yet non-irritating way to cleanse and hydrate the skin.",
         marque: "CeraVe",
+        price: "$20",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or leaving it feeling tight and dry. Featuring three essential ceramides and hyaluronic acid, the gel-based foaming cleanser is an effective yet non-irritating way to cleanse and hydrate the skin.",
         marque: "CeraVe",
+        price: "$25",
     },
     {
         id: 3,
@@ -21,6 +23,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or leaving it feeling tight and dry. Featuring three essential ceramides and hyaluronic acid, the gel-based foaming cleanser is an effective yet non-irritating way to cleanse and hydrate the skin.",
         marque: "CeraVe",
+        price: "$30",
     },
     {
         id: 4,
@@ -28,6 +31,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or leaving it feeling tight and dry. Featuring three essential ceramides and hyaluronic acid, the gel-based foaming cleanser is an effective yet non-irritating way to cleanse and hydrate the skin.",
         marque: "CeraVe",
+        price: "$35",
     },
     {
         id: 5,
@@ -35,6 +39,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or",
         marque: "CeraVe",
+        price: "$40",
     },
     {
         id: 6,
@@ -42,6 +47,7 @@ const AllArticles: ItemType[] = [
         image: "/assets/img/articles/image1.png",
         description: "CeraVe Hydrating Cleanser was developed with dermatologists to cleanse and refresh the skin without over-stripping it or",
         marque: "CeraVe",
+        price: "$45",
     }
     ];
 
