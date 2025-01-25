@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
           <Link href="/" className="flex justify-center">
             <Image
-              src="/assets/logo/Logo_white.svg"
+              src="/assets/logo/logo_white.svg"
               alt="logo"
               width={100}
               height={100}
