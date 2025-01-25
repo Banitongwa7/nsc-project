@@ -16,9 +16,9 @@ type Slide = {
 export default function Home() {
   const sliders: Slide[] = [
     { id: 1, image: "/assets/img/firstpage/image1.png" },
-    { id: 2, image: "/assets/img/firstpage/image2.jpg" },
+    { id: 2, image: "/assets/img/firstpage/image2.png" },
     { id: 3, image: "/assets/img/firstpage/image3.png" },
-    { id: 4, image: "/assets/img/firstpage/image4.jpg" },
+    { id: 4, image: "/assets/img/firstpage/image4.png" },
   ];
 
   const steps = [
