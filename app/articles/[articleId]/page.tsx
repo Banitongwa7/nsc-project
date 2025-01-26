@@ -28,7 +28,7 @@ export default async function DetailsArticle({
           </div>
         </div>
 
-        <div className="flex-[1.5] w-[500px]">
+        <div className="flex-[1.5] w-[80%] md:w-full mx-auto">
           <h2 className=" sm:text-[30px] text-[20px] font-bold">
             {article?.name}
           </h2>
@@ -39,7 +39,7 @@ export default async function DetailsArticle({
             <p>Le produit est commandé depuis la Belgique</p>
           </div>
 
-          <Link href={"#"}>
+          <Link href={"https://forms.gle/PF4s9DRkaupDWa6B9"} target="_blank">
             <div className="w-full bg-[--palette-4] text-center rounded-full py-3 mt-5 text-[var(--palette-1)] font-bold hover:bg-[--palette-5] cursor-pointer">
               Commander maintenant
             </div>
