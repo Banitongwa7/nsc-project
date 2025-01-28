@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NSC | Nyota Skincare",
-  description: "Nyota Skincare",
+  description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
   icons: "/assets/logo/logo_white.svg",
 };
 
