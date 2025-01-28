@@ -19,6 +19,34 @@ export const metadata: Metadata = {
   title: "NSC | Nyota Skincare",
   description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
   icons: "/assets/logo/logo_white.svg",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://nyota-skincare.vercel.app/",
+    title: "NSC | Nyota Skincare",
+    description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
+    images : [
+      {
+        url: "/assets/logo/logo_white.svg",
+        width: 1200,
+        height: 630,
+        alt: "NSC | Nyota Skincare",
+      },
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NSC | Nyota Skincare",
+    description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
+    images: [
+      {
+        url: "/assets/logo/logo_white.svg",
+        width: 1200,
+        height: 630,
+        alt: "NSC | Nyota Skincare",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
