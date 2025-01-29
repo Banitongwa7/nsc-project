@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full h-[50px] md:h-[80px] bg-[#ffffff] flex items-center justify-between px-8 transition-transform duration-300">
+    <div className="w-full h-[50px] md:h-[80px] bg-[#ffffff] flex items-center justify-between px-8 transition-transform duration-300 mt-5">
       <p className="logo">
         <Link href="/">
           <Image
@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link href="https://forms.gle/PF4s9DRkaupDWa6B9" target="_blank">Commander un article</Link>
         </div>
 
-        <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2">
+        <div className="w-8 md:w-12 h-8 md:h-12 rounded-full hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2">
           <BiMenuAltRight className="text-[20px]" />
         </div>
       </div>
