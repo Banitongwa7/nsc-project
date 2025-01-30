@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { BsChevronDown } from "react-icons/bs";
+import ExternalLinks from "@/data/ExternalLinks";
 
 type MenuData = {
   id: number;
@@ -53,7 +54,7 @@ export default function Navbar() {
 
       <div className="flex items-center gap-4 text-black">
         <div className="font-semibold bg-[var(--palette-1)] text-white px-4 py-2 rounded-full flex items-center gap-2 cursor-pointer hover:bg-[var(--palette-2)] transition-all duration-300">
-          <Link href="https://forms.gle/PF4s9DRkaupDWa6B9" target="_blank">Commander un article</Link>
+          <Link href={ExternalLinks.googleform} target="_blank">Commander un article</Link>
         </div>
 
         <div className="w-8 md:w-12 h-8 md:h-12 rounded-full hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2">

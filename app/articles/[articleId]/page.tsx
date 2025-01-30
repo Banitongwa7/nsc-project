@@ -2,6 +2,7 @@ import React from "react";
 import AllArticles from "@/data/AllArticles";
 import Image from "next/image";
 import Link from "next/link";
+import ExternalLinks from "@/data/ExternalLinks";
 
 export default async function DetailsArticle({
   params,
@@ -39,7 +40,7 @@ export default async function DetailsArticle({
             <p>Le produit est commandé depuis la Belgique</p>
           </div>
 
-          <Link href={"https://forms.gle/PF4s9DRkaupDWa6B9"} target="_blank">
+          <Link href={ExternalLinks.googleform} target="_blank">
             <div className="w-full bg-[--palette-4] text-center rounded-full py-3 mt-5 text-[var(--palette-1)] font-bold hover:bg-[--palette-5] cursor-pointer">
               Commander maintenant
             </div>

@@ -3,6 +3,7 @@ import { FaTiktok } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
+import ExternalLinks from "@/data/ExternalLinks";
 
 type Social = {
   id: number;
@@ -16,13 +17,13 @@ export default function Footer() {
     {
       id: 1,
       name: "Tiktok",
-      url: "https://www.tiktok.com/",
+      url: ExternalLinks.tiktok,
       icon: <FaTiktok className="w-5 h-5" />,
     },
     {
       id: 2,
       name: "Instagram",
-      url: "https://www.instagram.com/",
+      url: ExternalLinks.instagram,
       icon: <BsInstagram className="w-5 h-5" />,
     },
   ];
