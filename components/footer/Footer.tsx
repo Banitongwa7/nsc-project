@@ -73,6 +73,7 @@ export default function Footer() {
                 key={social.id}
                 href={social.url}
                 title={social.name}
+                target="_blank"
                 className="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center hover:bg-[var(--palette-4)] transition-all duration-300 text-[var(--palette-4)] hover:text-[var(--palette-1)]"
               >
                 {social.icon}

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NSC | Nyota Skincare",
   description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
-  icons: "/assets/logo/logo_white.svg",
+  icons: "https://nyota-skincare.vercel.app/assets/logo/Logo-tp.svg",
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
     images : [
       {
-        url: "/assets/logo/logo_white.svg",
+        url: "https://nyota-skincare.vercel.app/assets/logo/Logo-tp.svg",
         width: 1200,
         height: 630,
         alt: "NSC | Nyota Skincare",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: "Vente de produits cosmétiques de toutes marques à Kinshasa sur commande",
     images: [
       {
-        url: "/assets/logo/logo_white.svg",
+        url: "https://nyota-skincare.vercel.app/assets/logo/Logo-tp.svg",
         width: 1200,
         height: 630,
         alt: "NSC | Nyota Skincare",
