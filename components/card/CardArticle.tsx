@@ -14,7 +14,7 @@ export default function CardArticle({ item }: { item: ItemType }) {
           <p className="text-[var(--palette-1)] font-urbanist">
             {item.marque}
           </p>
-          <p className="text-white bg-[var(--palette-1)] w-20 text-center rounded-md font-extrabold">{item.price}</p>
+          <p className="text-white bg-[var(--palette-1)] w-20 text-center rounded-md font-extrabold">{item.currency + item.price}</p>
           </div>
         </div>
       </div>

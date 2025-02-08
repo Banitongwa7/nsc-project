@@ -5,6 +5,7 @@ export type ItemType = {
     description: string;
     price: string;
     marque: string;
+    currency: string;
 };
 
 
