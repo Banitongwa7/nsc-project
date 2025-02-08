@@ -6,3 +6,9 @@ export type ItemType = {
     price: string;
     marque: string;
 };
+
+
+export type SlideType = {
+    id: number;
+    image: string;
+  };

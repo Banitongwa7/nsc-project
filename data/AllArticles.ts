@@ -1,4 +1,4 @@
-import type { ItemType } from "@/types/itemType";
+import type { ItemType } from "@/types/types";
 
 const AllArticles: ItemType[] = [
     {

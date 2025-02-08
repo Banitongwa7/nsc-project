@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import type { ItemType } from '@/types/itemType'
+import type { ItemType } from '@/types/types'
 
 export default function CardArticle({ item }: { item: ItemType }) {
   return (

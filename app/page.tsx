@@ -9,15 +9,11 @@ import AllArticles from "@/data/AllArticles";
 import CardArticle from "@/components/card/CardArticle";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-
-type Slide = {
-  id: number;
-  image: string;
-};
+import { SlideType } from "@/types/types";
 
 export default function Home() {
   const [visibleItems, setVisibleItems] = useState<number>(6);
-  const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
+  const [filterProduct, setFilterProduct] = useState<string>("all");
 
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -30,7 +26,7 @@ export default function Home() {
     }
   }, [inView]);
 
-  const sliders: Slide[] = [
+  const sliders: SlideType[] = [
     { id: 1, image: "/assets/img/firstpage/image1.png" },
     { id: 2, image: "/assets/img/firstpage/image2.png" },
     { id: 3, image: "/assets/img/firstpage/image3.png" },
@@ -80,6 +76,11 @@ export default function Home() {
       thumbnail: "/assets/icons/steps/step-4.png",
     },
   ];
+
+
+  useEffect(() => {
+    console.log(filterProduct);
+  }, [filterProduct]);
 
   return (
     <div className="relative text-white text-[20px] w-full mx-auto my-10">
@@ -157,70 +158,19 @@ export default function Home() {
 
         <div className="w-full my-10 flex justify-center items-center">
           <div className="max-w-lg mx-auto relative">
-            <button
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-              type="button"
-              data-dropdown-toggle="dropdown"
-              onClick={() => setIsOpenProduct(!isOpenProduct)}
+            <label
+              htmlFor="products"
+              className="block mb-2 text-sm font-medium text-gray-900"
             >
-              Les produits{" "}
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-
-            <div
-              className={`absolute right-0 mt-2 w-56 origin-top-right bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4 ${
-                isOpenProduct ? "" : "hidden"
-              }`}
-              id="dropdown"
-            >
-              <ul className="py-1" aria-labelledby="dropdown">
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
-                  >
-                    CeraVe
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
-                  >
-                    The ordinary
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
-                  >
-                    La roche posay
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
-                  >
-                    Eucerin
-                  </a>
-                </li>
-              </ul>
-            </div>
+              Les produits
+            </label>
+            <select name="products" id="products" onChange={(e) => setFilterProduct(e.target.value)} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+              <option value="all">Tous</option>
+              <option value="CeraVejjjj">CeraVe</option>
+              <option value="The ordinary">The ordinary</option>
+              <option value="La roche posay">La roche posay</option>
+              <option value="Eucerin">Eucerin</option>
+            </select>
           </div>
 
           <form className="max-w-sm mx-auto">
