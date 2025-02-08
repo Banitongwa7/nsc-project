@@ -28,7 +28,7 @@ export default function Home() {
     if (inView) {
       setVisibleItems((prev) => Math.min(prev + 6, AllArticles.length));
     }
-  }, [inView, AllArticles.length]);
+  }, [inView]);
 
   const sliders: Slide[] = [
     { id: 1, image: "/assets/img/firstpage/image1.png" },
