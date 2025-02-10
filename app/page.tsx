@@ -134,9 +134,6 @@ export default function Home() {
               className="object-fill w-full h-[200px] sm:h-[400px] md:h-[700px]"
               priority
             />
-            <div className="px-[8px] md:px-[40px] py-[8px] md:py-[25px] bg-[var(--palette-3)] absolute bottom-[15px] md:bottom-[75px] left-0 text-white text-[10px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90 rounded-r-2xl">
-              Voir plus
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>
