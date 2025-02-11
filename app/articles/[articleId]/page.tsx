@@ -34,7 +34,7 @@ export default async function DetailsArticle({
             {article?.name}
           </h2>
           <p className="price font-bold text-[18px] text-[--palette-1]">
-            Prix : {article?.price}
+            Prix : {article?.currency + "" + article?.price}
           </p>
           <div className=" text-gray-400 text-[15px] pb-8">
             <p>Le produit est commandé depuis la Belgique</p>

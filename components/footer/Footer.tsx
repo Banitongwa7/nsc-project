@@ -4,13 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import ExternalLinks from "@/data/ExternalLinks";
-
-type Social = {
-  id: number;
-  name: string;
-  url: string;
-  icon: React.JSX.Element;
-}[];
+import { Social } from "@/types/types";
 
 export default function Footer() {
   const socials: Social = [
@@ -44,7 +38,7 @@ export default function Footer() {
           <ul className="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
             <li>
               <Link
-                href="#"
+                href="/"
                 className="text-white hover:text-[var(--palette-4)]"
               >
                 Accueil
@@ -52,7 +46,7 @@ export default function Footer() {
             </li>
             <li className="sm:my-0 my-2">
               <Link
-                href="#"
+                href="/articles"
                 className="text-white hover:text-[var(--palette-4)]"
               >
                 Nos articles
@@ -60,7 +54,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/contact"
                 className="text-white hover:text-[var(--palette-4)]"
               >
                 Contact
